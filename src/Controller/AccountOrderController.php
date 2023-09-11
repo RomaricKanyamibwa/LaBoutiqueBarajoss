@@ -19,7 +19,7 @@ class AccountOrderController extends AbstractController
 
 
 
-    #[Route('/compte/mes-commandes', name: 'account_order')]
+    #[Route('/compte/mes-commandes', name: 'order')]
    
     public function index(): Response
     {
@@ -29,7 +29,7 @@ class AccountOrderController extends AbstractController
         ]);
     }
 
-    #[Route('/compte/mes-commandes/{reference}', name: 'account_order_show')]
+    #[Route('/compte/mes-commandes/{reference}', name: 'order_show')]
    
     public function show($reference): Response
     {

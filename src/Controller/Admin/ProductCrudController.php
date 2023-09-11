@@ -38,8 +38,6 @@ class ProductCrudController extends AbstractCrudController
             MoneyField::new('price')->setCurrency('EUR'),
             AssociationField::new('category'),
             
-            //ImageField::new('illustration')->setBasePath('uploads/')->setFormTypeOptions(['mapped' =>false, 'required' =>false])
-
         ];
 
 

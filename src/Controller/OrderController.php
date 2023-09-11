@@ -95,10 +95,7 @@ class OrderController extends AbstractController
                     $this->entityManager->persist($orderDetails);
                 
                      $this->entityManager->flush();
-                // dump($checkout_session->id);
-                // dd($checkout_session);
-                     // echo json_encode(['id' => $checkout_session->id]);
-
+                
                      return $this->render('order/add.html.twig',[
                                     
                         'cart'=> $cart ->getfull(),
@@ -110,7 +107,7 @@ class OrderController extends AbstractController
             }
                 
                         return $this->redirectToRoute('cart');
-                    //enregistrer mes produits orderdetails()
+                   
            
     }
 
